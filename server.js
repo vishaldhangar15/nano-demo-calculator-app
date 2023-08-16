@@ -25,7 +25,7 @@ baseRouter.post('/add', async(req, res) => {
 baseRouter.post('/subtract', async(req, res) => {
     const {first,second} = await req.body;
     
-    return res.status(200).json({"result" : firsts-second});
+    return res.status(200).json({"result" : first-second});
 });
 
 app.use(baseUrl, baseRouter);
